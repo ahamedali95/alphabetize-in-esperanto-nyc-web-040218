@@ -1,3 +1,8 @@
 def alphabetize(arr)
-  # code here
+  alphabets = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".split("")
+
+  arr.sort_by do |phrase|
+    alphabets.index(phrase[0])
+  end
+
 end
